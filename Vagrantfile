@@ -92,8 +92,8 @@ Vagrant.configure("2") do |config|
     end
 
     devsecops.vm.provider "virtualbox" do |v|
-      v.memory = 4096
-      v.cpus = 2
+      v.memory = 8042
+      v.cpus = 4
     end
     devsecops.vm.provision "setup", type: "shell", inline: $script
   end
